@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es" data-variant="pastoral" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La casa de la Sabiduría · Las siete columnas de los Proverbios</title>
+<meta name="description" content="Un recorrido por la sabiduría de Dios en el libro de los Proverbios: siete columnas —el temor del Señor, la lengua, el trabajo, la familia, la amistad, la humildad y el pobre— y una mesa servida.">
+<meta name="theme-color" content="#0B0A08">
+<meta property="og:type" content="website">
+<meta property="og:title" content="La casa de la Sabiduría">
+<meta property="og:description" content="«La Sabiduría se ha construido su casa, ha labrado sus siete columnas». Siete columnas de los Proverbios y una mesa servida.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="modulepreload" href="js/three.module.min.js">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#prologo">Saltar al contenido</a>
+
+<div class="stage" aria-hidden="true">
+  <canvas id="casa3d"></canvas>
+  <div class="stage__fallback">
+    <svg viewBox="0 0 400 300" class="templo-svg">
+      <g fill="none" stroke="#C9A35B" stroke-width="1.2">
+        <path d="M60 70 Q200 30 340 70 L340 86 Q200 46 60 86 Z"/>
+        <path d="M70 92 H330 M70 92 V240 M330 92 V240"/>
+        <path d="M110 96 V240 M150 98 V240 M200 99 V240 M250 98 V240 M290 96 V240" stroke-width="10" stroke="#3b3227"/>
+        <path d="M110 96 V240 M150 98 V240 M200 99 V240 M250 98 V240 M290 96 V240"/>
+        <path d="M40 240 H360 M30 252 H370 M20 264 H380"/>
+      </g>
+      <circle cx="200" cy="200" r="16" fill="#C9A35B" opacity=".5"/>
+    </svg>
+  </div>
+  <div class="stage__veil"></div>
+</div>
+
+<header class="top">
+  <a class="top__brand" href="#inicio">La casa de la Sabiduría</a>
+  <button class="top__btn" type="button" aria-expanded="false" aria-controls="menu-columnas"><span class="top__cur" id="actual">Columnas</span><i aria-hidden="true"></i></button>
+  <nav class="top__nav" id="menu-columnas" aria-label="Columnas" hidden>
+    <ol>
+        <li><a href="#columna-1" data-dot="1"><span class="rn">I</span><span class="nm">El temor del Señor</span></a></li>
+        <li><a href="#columna-2" data-dot="2"><span class="rn">II</span><span class="nm">La lengua</span></a></li>
+        <li><a href="#columna-3" data-dot="3"><span class="rn">III</span><span class="nm">El trabajo</span></a></li>
+        <li><a href="#columna-4" data-dot="4"><span class="rn">IV</span><span class="nm">La familia</span></a></li>
+        <li><a href="#columna-5" data-dot="5"><span class="rn">V</span><span class="nm">La amistad</span></a></li>
+        <li><a href="#columna-6" data-dot="6"><span class="rn">VI</span><span class="nm">La humildad</span></a></li>
+        <li><a href="#columna-7" data-dot="7"><span class="rn">VII</span><span class="nm">La justicia y el pobre</span></a></li>
+        <li><a href="#mesa" data-dot="8"><span class="rn">✦</span><span class="nm">La mesa servida</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio" data-cam="overview">
+    <p class="eyebrow reveal">Las siete columnas de los Proverbios</p>
+    <h1 class="hero__title hero__title--2"><span class="line"><span>La casa de</span></span><span class="line"><span><em>la Sabiduría</em></span></span></h1>
+    <p class="hero__sub reveal">«La Sabiduría se ha construido su casa, ha labrado sus siete columnas»</p>
+    <a class="hero__cue" href="#prologo"><span>Entra en la casa</span><i></i></a>
+  </section>
+
+  <section class="prologo" id="prologo" data-cam="overview">
+    <div class="prologo__inner">
+      <p class="cap reveal"><span class="drop">E</span>l libro de los Proverbios parece un manual de consejos prácticos: cómo hablar, cómo trabajar, cómo educar, cómo tratar al pobre. Pero detrás de cada consejo hay Alguien. La Sabiduría aparece como una figura viva, que estaba junto a Dios cuando creaba el mundo y que se alegra de estar con los hombres.</p>
+      <blockquote class="cita reveal"><p>«Yo estaba junto a él, como aprendiz, yo era su encanto cotidiano, todo el tiempo jugaba en su presencia […], y mis delicias están con los hijos de los hombres».</p><cite>Proverbios 8, 30-31</cite></blockquote>
+      <p class="reveal">La Iglesia reconoció en esa Sabiduría el rostro del Hijo, la Palabra por la que todo fue hecho. Su casa tiene siete columnas; en el centro, una mesa servida.</p>
+      <p class="reveal muted">Recorre las siete columnas. En cada una, un proverbio, otros para rumiar, una palabra del Evangelio y una pregunta para la oración. Al recorrerlas, se irán encendiendo.</p>
+    </div>
+  </section>
+
+  <!-- COLUMNA I -->
+  <section class="etapa" id="columna-1" data-cam="col" data-col="0">
+    <div class="etapa__head">
+      <span class="etapa__rn">I</span>
+      <p class="etapa__lugar">El temor del Señor</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna I · El fundamento</p>
+      <h2 class="panel__title">Donde empieza la sabiduría</h2>
+      <p>El libro de los Proverbios abre con una advertencia: la sabiduría no empieza por saber muchas cosas, sino por saber quién es Dios. El «temor del Señor» no es miedo: es el asombro y el respeto de quien se sabe criatura delante de su Creador.</p>
+      <p>Quien vive así no se fía solo de su propia inteligencia. Aprende a escuchar, a pedir consejo, a reconocer que no todo depende de él. Por eso el necio desprecia la instrucción: cree que ya lo sabe todo.</p>
+      <p>Jesús dio gracias al Padre porque esta sabiduría se revela a los pequeños. No hace falta ser sabio según el mundo; basta con ponerse delante de Dios con el corazón abierto.</p>
+      <blockquote class="cita">
+        <p>«El principio de la sabiduría es el temor del Señor, y el conocimiento del Santo es inteligencia».</p>
+        <cite>Proverbios 9, 10</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Confía en el Señor de todo corazón y no te fíes de tu propia inteligencia». <cite>Proverbios 3, 5</cite></li>
+        <li>«El temor del Señor es fuente de vida, que aparta de los lazos de la muerte». <cite>Proverbios 14, 27</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Te doy gracias, Padre, Señor de cielo y tierra, porque has escondido estas cosas a los sabios y entendidos, y las has revelado a los pequeños». <cite>Mateo 11, 25</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Dónde me fío solo de mi propia inteligencia? ¿Qué decisión de estos días necesito poner delante de Dios antes de tomarla?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+3%3A1-12&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 3, 1-12</a>
+        <button class="btn btn--ghost" data-share="1" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«La senda de los justos es como la luz del alba, que va en aumento hasta llegar a pleno día».<cite>Proverbios 4, 18</cite></p></div>
+
+  <!-- COLUMNA II -->
+  <section class="etapa" id="columna-2" data-cam="col" data-col="1">
+    <div class="etapa__head">
+      <span class="etapa__rn">II</span>
+      <p class="etapa__lugar">La lengua</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna II · La palabra</p>
+      <h2 class="panel__title">Una palabra que cura o que hiere</h2>
+      <p>Pocas cosas aparecen tanto en los Proverbios como la lengua. Una palabra puede levantar a alguien o hundirlo; puede apagar una discusión o incendiar una casa. El sabio habla poco, a tiempo y con verdad.</p>
+      <p>La murmuración, la mentira, la crítica fácil, la burla: son palabras pequeñas con efectos enormes. Y también lo contrario: una palabra amable a tiempo, un consejo sincero, un «perdona» dicho sin rodeos.</p>
+      <p>El cristiano está llamado a que de su boca salga lo que edifica. No por buenos modales, sino porque la Palabra de Dios se hizo carne, y nuestras palabras pueden llevar su bendición.</p>
+      <blockquote class="cita">
+        <p>«Una respuesta suave aplaca la ira, una palabra hiriente enciende la cólera».</p>
+        <cite>Proverbios 15, 1</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Hay quien habla sin tino, como quien hiere con espada; la lengua de los sabios cura». <cite>Proverbios 12, 18</cite></li>
+        <li>«En el mucho hablar no faltará pecado; el que refrena sus labios es prudente». <cite>Proverbios 10, 19</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Malas palabras no salgan de vuestra boca; lo que digáis sea bueno, constructivo y oportuno, así hará bien a los que lo oyen». <cite>Efesios 4, 29</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Qué palabra mía de esta semana ha herido a alguien? ¿A quién puedo decirle hoy una palabra que le levante?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+15%3A1-7&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 15, 1-7</a>
+        <button class="btn btn--ghost" data-share="2" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«El necio cree que su camino es recto; el sabio escucha el consejo».<cite>Proverbios 12, 15</cite></p></div>
+
+  <!-- COLUMNA III -->
+  <section class="etapa" id="columna-3" data-cam="col" data-col="2">
+    <div class="etapa__head">
+      <span class="etapa__rn">III</span>
+      <p class="etapa__lugar">El trabajo</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna III · Las manos</p>
+      <h2 class="panel__title">Fíjate en la hormiga</h2>
+      <p>Los Proverbios miran con humor al perezoso: se da la vuelta en la cama como la puerta en sus goznes, pone excusas —«¡hay un león en la calle!»— y deja que su campo se llene de cardos. Y le mandan aprender de la hormiga, que sin jefe ni capataz prepara en verano su comida.</p>
+      <p>El trabajo bien hecho es parte de la sabiduría: fidelidad en lo pequeño, constancia, honradez. Pero también lo es no hacer del trabajo un ídolo, ni del dinero la medida de todo.</p>
+      <p>El sabio pone sus planes en manos de Dios y luego se arremanga. Trabaja como quien sirve al Señor, y descansa sabiendo que no todo depende de él.</p>
+      <blockquote class="cita">
+        <p>«Fíjate en la hormiga, perezoso, observa su conducta y aprende: no tiene jefe, ni capataz, ni gobernante; y, sin embargo, en verano acumula provisiones y en la cosecha reúne su comida».</p>
+        <cite>Proverbios 6, 6-8</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Encomienda al Señor tus tareas, y se cumplirán tus proyectos». <cite>Proverbios 16, 3</cite></li>
+        <li>«La puerta gira en sus goznes, y el perezoso en su cama». <cite>Proverbios 26, 14</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Todo lo que hagáis, hacedlo con toda el alma, como para servir al Señor y no a los hombres». <cite>Colosenses 3, 23</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Hay algo que llevo tiempo posponiendo? ¿Trabajo como quien sirve al Señor, o como si todo dependiera de mí?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+6%3A6-11&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 6, 6-11</a>
+        <button class="btn btn--ghost" data-share="3" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«Más vale poco con temor del Señor que un gran tesoro con inquietud».<cite>Proverbios 15, 16</cite></p></div>
+
+  <!-- COLUMNA IV -->
+  <section class="etapa" id="columna-4" data-cam="col" data-col="3">
+    <div class="etapa__head">
+      <span class="etapa__rn">IV</span>
+      <p class="etapa__lugar">La familia</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna IV · La casa</p>
+      <h2 class="panel__title">Escucha, hijo mío</h2>
+      <p>Buena parte del libro está escrita como un padre que habla a su hijo: «Escucha, hijo mío». La sabiduría se transmite en casa, en la mesa, en el ejemplo más que en los discursos.</p>
+      <p>Los Proverbios alaban a la mujer fuerte, que vale más que las perlas; piden honrar a los padres también cuando envejecen; y recuerdan que educar es sembrar: lo que se aprende de niño acompaña toda la vida.</p>
+      <p>La familia es la primera escuela de sabiduría, también con sus heridas. Allí aprendemos a pedir perdón, a corregir con cariño y a dejarnos corregir.</p>
+      <blockquote class="cita">
+        <p>«Escucha, hijo mío, la instrucción de tu padre, no rechaces la enseñanza de tu madre: serán una hermosa diadema en tu cabeza, un collar para tu cuello».</p>
+        <cite>Proverbios 1, 8-9</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Una mujer fuerte, ¿quién la hallará? Supera en valor a las perlas». <cite>Proverbios 31, 10</cite></li>
+        <li>«Escucha a tu padre, que te engendró, y no desprecies a tu madre cuando sea anciana». <cite>Proverbios 23, 22</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Padres, no exasperéis a vuestros hijos; criadlos educándolos y corrigiéndolos según el Señor». <cite>Efesios 6, 4</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Qué sabiduría he recibido en mi casa que hoy agradezco? ¿Qué quiero transmitir a los que vienen detrás de mí?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+31%3A10-31&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 31, 10-31</a>
+        <button class="btn btn--ghost" data-share="4" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«El hijo sabio alegra a su padre; el hijo necio es la pena de su madre».<cite>Proverbios 10, 1</cite></p></div>
+
+  <!-- COLUMNA V -->
+  <section class="etapa" id="columna-5" data-cam="col" data-col="4">
+    <div class="etapa__head">
+      <span class="etapa__rn">V</span>
+      <p class="etapa__lugar">La amistad</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna V · Los compañeros de camino</p>
+      <h2 class="panel__title">El amigo ama en todo tiempo</h2>
+      <p>«Dime con quién andas…»: los Proverbios ya lo sabían. Quien anda con sabios se hace sabio; quien se junta con necios acaba mal. Los amigos nos van dando forma.</p>
+      <p>El amigo verdadero no es el que siempre nos da la razón. El hierro se afila con hierro: el que nos quiere, también nos corrige. Y es fiel en la desgracia, cuando los demás desaparecen.</p>
+      <p>Jesús llamó amigos a sus discípulos y dio la vida por ellos. Toda amistad cristiana es un reflejo de esa amistad que no se rompe.</p>
+      <blockquote class="cita">
+        <p>«El amigo ama en todo tiempo, y el hermano nace para la desgracia».</p>
+        <cite>Proverbios 17, 17</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Quien anda con sabios se hace sabio». <cite>Proverbios 13, 20</cite></li>
+        <li>«El hierro se afila con hierro, y el hombre con el trato de su prójimo». <cite>Proverbios 27, 17</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Ya no os llamo siervos […]; a vosotros os llamo amigos, porque todo lo que he oído a mi Padre os lo he dado a conocer». <cite>Juan 15, 15</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Quiénes son mis amigos de verdad? ¿Soy yo, para alguien, el amigo que afila y que sostiene?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+27%3A1-17&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 27, 1-17</a>
+        <button class="btn btn--ghost" data-share="5" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«Más vale un plato de verdura con amor que un buey cebado con odio».<cite>Proverbios 15, 17</cite></p></div>
+
+  <!-- COLUMNA VI -->
+  <section class="etapa" id="columna-6" data-cam="col" data-col="5">
+    <div class="etapa__head">
+      <span class="etapa__rn">VI</span>
+      <p class="etapa__lugar">La humildad</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna VI · El corazón</p>
+      <h2 class="panel__title">Delante de la caída, la soberbia</h2>
+      <p>Los Proverbios desconfían del que se cree sabio: más se puede esperar de un necio que de él. La soberbia ciega; impide aprender, pedir perdón, cambiar.</p>
+      <p>La humildad, en cambio, abre la puerta: deja que otros nos enseñen, acepta la corrección, reconoce los propios límites sin hundirse. «Delante de la gloria va la humildad».</p>
+      <p>Cristo, siendo Dios, se hizo siervo. Por eso la humildad cristiana no es despreciarse, sino parecerse a él: manso y humilde de corazón.</p>
+      <blockquote class="cita">
+        <p>«Delante de la ruina va la soberbia, delante de la caída, el espíritu altivo».</p>
+        <cite>Proverbios 16, 18</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Tras la soberbia viene la deshonra; la sabiduría está con los humildes». <cite>Proverbios 11, 2</cite></li>
+        <li>«El temor del Señor es escuela de sabiduría; delante de la gloria va la humildad». <cite>Proverbios 15, 33</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«Aprended de mí, que soy manso y humilde de corazón, y encontraréis descanso para vuestras almas». <cite>Mateo 11, 29</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿En qué me cuesta reconocer que me he equivocado? ¿De quién podría aprender hoy, si bajara un poco la guardia?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+16%3A1-20&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 16, 1-20</a>
+        <button class="btn btn--ghost" data-share="6" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«Hay caminos que parecen rectos, pero al final conducen a la muerte».<cite>Proverbios 14, 12</cite></p></div>
+
+  <!-- COLUMNA VII -->
+  <section class="etapa" id="columna-7" data-cam="col" data-col="6">
+    <div class="etapa__head">
+      <span class="etapa__rn">VII</span>
+      <p class="etapa__lugar">La justicia y el pobre</p>
+    </div>
+    <article class="panel">
+      <p class="panel__kicker">Columna VII · Las manos abiertas</p>
+      <h2 class="panel__title">Quien se apiada del pobre presta al Señor</h2>
+      <p>La sabiduría de Dios no se queda en la cabeza: se nota en cómo tratamos al débil. Los Proverbios lo dicen con fuerza: quien oprime al pobre ultraja a su Creador; quien se compadece de él, lo honra.</p>
+      <p>Nada de balanzas trucadas, de mover los mojones del vecino, de cerrar el oído al grito del necesitado. La justicia en lo pequeño —un precio, un sueldo, una deuda— también es sabiduría.</p>
+      <p>Jesús llevó esto hasta el final: lo que hacemos al más pequeño, se lo hacemos a él. Cada comida compartida, cada acogida, cada visita es una columna de la casa de la Sabiduría.</p>
+      <blockquote class="cita">
+        <p>«Quien se apiada del pobre presta al Señor, y él le pagará su buena acción».</p>
+        <cite>Proverbios 19, 17</cite>
+      </blockquote>
+      <div class="rumiar">
+        <p class="rumiar__label">Para rumiar</p>
+        <ul>
+        <li>«Quien oprime al débil ultraja a su Creador; quien se apiada del pobre lo honra». <cite>Proverbios 14, 31</cite></li>
+        <li>«Quien cierra el oído al clamor del débil, cuando clame él no tendrá respuesta». <cite>Proverbios 21, 13</cite></li>
+        </ul>
+      </div>
+      <p class="eco">«En verdad os digo que cada vez que lo hicisteis con uno de estos, mis hermanos más pequeños, conmigo lo hicisteis». <cite>Mateo 25, 40</cite></p>
+      <div class="pausa">
+        <p class="pausa__label">Para la oración</p>
+        <p class="pausa__q">¿Qué pobre tengo cerca y no veo? ¿Qué puedo hacer esta semana para que mi fe se note en mis manos?</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="https://www.biblegateway.com/passage/?search=Proverbios+22%3A1-16&amp;version=BLP" target="_blank" rel="noopener">Leer Proverbios 22, 1-16</a>
+        <button class="btn btn--ghost" data-share="7" type="button">Compartir por WhatsApp</button>
+      </div>
+    </article>
+  </section>
+  <div class="tramo" data-cam="travel"><p class="reveal">«Más vale adquirir sabiduría que oro».<cite>Proverbios 16, 16</cite></p></div>
+
+  <!-- LA MESA -->
+  <section class="mesa" id="mesa" data-cam="mesa">
+    <div class="mesa__inner">
+      <p class="eyebrow reveal">En el centro de la casa</p>
+      <h2 class="mesa__title reveal">La mesa servida</h2>
+      <blockquote class="cita cita--final reveal"><p>«La Sabiduría se ha construido su casa, ha labrado sus siete columnas; ha sacrificado víctimas, ha mezclado el vino y ha preparado la mesa. […] “Venid a comer de mi pan y a beber el vino que he mezclado”».</p><cite>Proverbios 9, 1-2.5</cite></blockquote>
+      <p class="reveal">Las siete columnas no sostienen una casa vacía. En el centro hay una mesa, y la Sabiduría sale a los caminos a invitar a todos, sobre todo a los sencillos. La Iglesia ha leído aquí la Eucaristía: el pan y el vino que la Sabiduría de Dios nos ofrece.</p>
+      <p class="reveal">Porque la Sabiduría de Dios tiene nombre: Jesucristo. Y su sabiduría desconcierta al mundo, porque pasa por la cruz. Lo que parece necedad —amar al enemigo, servir, dar la vida— es la sabiduría más alta.</p>
+      <blockquote class="cita cita--final reveal"><p>«Nosotros predicamos a Cristo crucificado: escándalo para los judíos, necedad para los gentiles; pero para los llamados […], Cristo, fuerza de Dios y sabiduría de Dios».</p><cite>1 Corintios 1, 23-24</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="final" id="final" data-cam="mesa">
+    <div class="final__inner">
+      <p class="eyebrow reveal">Y ahora, tú</p>
+      <h2 class="final__title reveal">Construir sobre roca</h2>
+      <p class="final__pregunta reveal">¿Sobre qué columnas estoy construyendo mi casa?</p>
+      <blockquote class="cita cita--final reveal"><p>«Todo el que escucha estas palabras mías y las pone en práctica se parece a aquel hombre prudente que edificó su casa sobre roca».</p><cite>Mateo 7, 24</cite></blockquote>
+
+      <div class="proverbio reveal" id="proverbio" aria-live="polite">
+        <p class="proverbio__label">Un proverbio para hoy</p>
+        <p class="proverbio__txt" id="prov-txt">«Por encima de todo, guarda tu corazón, porque de él brotan las fuentes de la vida».</p>
+        <cite class="proverbio__ref" id="prov-ref">Proverbios 4, 23</cite>
+        <div class="acciones acciones--center">
+          <button class="btn btn--ghost" id="prov-otro" type="button">Otro proverbio</button>
+          <button class="btn btn--ghost" id="prov-share" type="button">Enviarlo por WhatsApp</button>
+        </div>
+      </div>
+
+      <div class="final__indices">
+        <p class="final__grp">Las siete columnas</p>
+        <ol class="final__index">
+          <li><a href="#columna-1"><span class="rn">I</span> <span class="nm">El temor del Señor</span><em>Donde empieza la sabiduría</em></a></li>
+          <li><a href="#columna-2"><span class="rn">II</span> <span class="nm">La lengua</span><em>Una palabra que cura o que hiere</em></a></li>
+          <li><a href="#columna-3"><span class="rn">III</span> <span class="nm">El trabajo</span><em>Fíjate en la hormiga</em></a></li>
+          <li><a href="#columna-4"><span class="rn">IV</span> <span class="nm">La familia</span><em>Escucha, hijo mío</em></a></li>
+          <li><a href="#columna-5"><span class="rn">V</span> <span class="nm">La amistad</span><em>El amigo ama en todo tiempo</em></a></li>
+          <li><a href="#columna-6"><span class="rn">VI</span> <span class="nm">La humildad</span><em>Delante de la caída, la soberbia</em></a></li>
+          <li><a href="#columna-7"><span class="rn">VII</span> <span class="nm">La justicia y el pobre</span><em>Quien se apiada del pobre presta al Señor</em></a></li>
+          <li><a href="#mesa"><span class="rn">✦</span> <span class="nm">La mesa servida</span><em>Cristo, sabiduría de Dios</em></a></li>
+        </ol>
+      </div>
+      <div class="acciones acciones--center">
+        <button class="btn" data-share="0" type="button">Compartir la casa por WhatsApp</button>
+        <a class="btn btn--ghost" href="#inicio">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <p>Un recorrido para la oración personal por el libro de los Proverbios. Textos bíblicos: Sagrada Biblia, versión oficial de la Conferencia Episcopal Española.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
